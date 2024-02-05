@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CRM AVEZA - Inicio de Sesión</title>
+    <link rel="icon" href="img/Triangulos aveza.ico" />
+    <link rel="stylesheet" href="style css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="style css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="style css/style.css" type="text/css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+  </head>
+
+  <body class="fondo2">
+    <header>
+      <div class="logo-aveza">
+        <img src="img/LOGO AVEZA.png" alt="logo-aveza" title="AVEZA SAS" />
+      </div>
+      <h1 class="titulo">Inicio de Sesión</h1>
+    </header>
+
+    <main>
+      <form name="IngresoCRM" method="POST" action="InicioSesion">
+        <br />
+        <br />
+        <div class="ingresousuario"> 
+          <label for="usuario" class="labelusuario">Usuario:</label>
+          <input type="number" name="usuario" id="username" class="cajausuario"/>
+        </div>
+        <br />
+        <br />
+        <div name="ingresoCon" class="ingresocontraseña">
+          <label for="clave" class="labelcontraseña">Contraseña:</label>
+          <input type="password" name="clave" id="password" class="cajausuario"/>
+        </div>
+        <br />
+        <br />
+        <div class="tipodeusuario">
+          <label for="tipodeusuario" class="labeltipousuario"
+            >Tipo de usuario:
+          </label>
+          <select name="tipodeusuario" id="idusuario" class="cajausuario">
+            <option value="">Elija una opcion</option>
+            <option value="Administrador">Administrador</option>
+            <option value="Cliente">Cliente</option>
+          </select>
+        </div>
+        <br />
+        <br />
+        <div name="botInicio" class="botonesiniciosesion">
+ 
+          <input type="submit" name="ingreso" value="Ingresar" class="botones">
+
+          <input type="button" name="cancelar" value="Cancelar" class="botones"/>
+          
+        <input type="button" name="crear" value="Crear Usuario" class="botones">
+        <br />
+        <div class="linkolvido">
+        <a href="RecordatorioContrasena.html" class="olvidocontraseña">¿Olvidó su contraseña?</a>
+      </div>
+      </form>
+      
+    </main>
+  </body>
+</html>

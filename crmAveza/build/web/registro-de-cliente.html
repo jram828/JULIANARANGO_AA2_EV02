@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>registro de cliente</title>
+    <link rel="icon" href="img/Triangulos aveza.ico" />
+    <link rel="stylesheet" href="style css/style.css" />
+  </head>
+  <body class="fondo2">
+    <div class="logo-aveza">
+      <img src="img/LOGO AVEZA.png" alt="logo-aveza"/>
+      
+    </div>
+    <h1 class="titulo">Registro De Cliente</h1>
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="Menu.html">Inicio</a></li>
+        <li>
+          <a href="registro-de-cliente.html">Registro de cliente</a>
+        </li>
+        <li><a href="#">Cotización</a></li>
+        <li><a href="#">Financiamiento</a></li>
+        <li><a href="generar-contrato.html">Contrato</a></li>
+        <li><a href="agendar-cita.html">Agendar citas</a></li>
+        <li><a href="#">Generar documentos legales</a></li>
+        <li>
+          <a href="configurar-recordatorio.html">Configurar recordatorios</a>
+        </li>
+        <li>
+          <a href="#">Conocimiento de Litigios</a>
+          <ol class="menu-vertical">
+            <li><a href="#">Por Cliente</a></li>
+            <li><a href="#">Por Tipo de Caso</a></li>
+          </ol>
+        </li>
+        <li><a href="#">Generar Factura</a></li>
+        <li><a href="#">Cerrar Sesión</a></li>
+      </ul>
+    </nav>
+    <br /><br />
+    <form class="datos">
+
+    <div class="nombreapellidos">
+                <label for="nombre" class="labelregistrodecliente">Nombre(s):</label>
+                <input type="text" name="nombre" id="name" class="cajaregistrocliente">
+                <label for="apellidos" class="labelregistrodecliente">Apellido(s):</label>
+                <input type="text" class="cajaregistrocliente" name="apellidos" id="lastname">
+    </div>
+                <br/>
+                <br/>
+    <div class="numerocedula">
+                <label for="numerocedula" class="labelregistrodecliente">Numero de cédula:</label>
+                <input type="number" class="cajaregistrocliente"  name="numerocedula" id="cedula">
+                <label for="correo" class="labelregistrodecliente">Email:</label>
+                <input type="email" name="correo" id="email" class="cajaregistrocliente">
+    </div>           
+                <br/>
+                <br/>
+    <div class="nombreapellidos">
+                <label for="direccion" class="labelregistrodecliente">Dirección:</label>
+                <input type="text" name="direccion" id="address" class="cajaregistrocliente">
+                
+                <label for="telefono" class="labelregistrodecliente"> Celular:</label>
+                <input type="number" name="telefono" id="celular" class="cajaregistrocliente">
+              </div> 
+
+                <br/>
+                <br/>
+
+    <div class="nombreapellidos">
+                <label for="ciudad" class="labelregistrodecliente">Ciudad:</label>
+                <input type="text" name="ciudad" id="city" class="cajaregistrocliente">
+
+    <!-- <br /><br /> -->
+    <!-- <div class="tipo-de-caso"> -->
+      <label for="tIpo-de-caso"class="labelregistrodecliente">Tipo de caso</label> <br />
+      <select name="tIpo-de-caso"  class="cajaregistrocliente" id="casos">
+        <option value="">Elija una opcion</option>
+        <option value="insolvencia">Insolvencia</option>
+        <option value="divorcio">Divorcio</option>
+        <option value="proteccion-de-patrimonio"> Protección de patrimonio
+        </option>
+        <option value="derecho-laboral">Derecho laboral</option>
+        <option value="DCRGE">
+          Derecho corporativo y recaudo y gestion de contratación estatal
+        </option>
+      </select>
+    </div>
+    <br /><br />
+    <div class="comentarios">
+      <label for="comentarios">Comentarios</label> 
+      <br />
+      <br/>
+      <textarea
+        name="comentarios"
+        id="comentarios"
+        cols="30"
+        rows="5"
+      ></textarea>
+    </div>
+    <br/>
+    <div class="botonesiniciosesion">
+      <input type="button" class="botones" value="Modificar" />
+      <input type="button" class="botones" value="Guardar" />
+    </div>
+  </body>
+</html>
